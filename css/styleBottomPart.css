@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif; }
+
+.subscribeWrap {
+  margin-top: 100px;
+  height: 438px;
+  background: url(../images/subscribe.jpg) no-repeat center bottom, #ccc;
+  background-blend-mode: overlay;
+  background-size: cover; }
+  @media (max-width: 1040px) {
+    .subscribeWrap {
+      height: auto; } }
+  .subscribeWrap .subscribe {
+    display: flex;
+    height: inherit; }
+    @media (max-width: 1040px) {
+      .subscribeWrap .subscribe {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px; } }
+    .subscribeWrap .subscribe .reviews,
+    .subscribeWrap .subscribe .subscribeRight {
+      width: calc(50% - 0.5px); }
+      @media (max-width: 1040px) {
+        .subscribeWrap .subscribe .reviews,
+        .subscribeWrap .subscribe .subscribeRight {
+          width: auto; } }
+
+.productsPageSubscribe {
+  margin-top: 0; }
+
+.reviews {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 1040px) {
+    .reviews {
+      margin-bottom: 50px; } }
+  .reviews .reviewUnit {
+    width: 500px;
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 530px) {
+      .reviews .reviewUnit {
+        width: auto; } }
+    @media (max-width: 353px) {
+      .reviews .reviewUnit {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    .reviews .reviewUnit .reviewUnitLeft {
+      width: 83px; }
+    .reviews .reviewUnit .reviewUnitRight {
+      width: 386px; }
+    @media (max-width: 530px) {
+      .reviews .reviewUnit .reviewUnitLeft,
+      .reviews .reviewUnit .reviewUnitRight {
+        width: auto; } }
+    @media (max-width: 530px) {
+      .reviews .reviewUnit .reviewUnitRight {
+        margin-left: 15px; } }
+    @media (max-width: 353px) {
+      .reviews .reviewUnit .reviewUnitRight {
+        margin-left: 0; } }
+    .reviews .reviewUnit .reviewUnitRight blockquote {
+      margin: 0;
+      font-size: 16px;
+      font-style: italic;
+      line-height: 26px;
+      font-weight: 700; }
+    .reviews .reviewUnit .reviewUnitRight .reviewName {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #f16d7f; }
+    @media (max-width: 353px) {
+      .reviews .reviewUnit .reviewUnitRight .reviewName,
+      .reviews .reviewUnit .reviewUnitRight .reviewFrom {
+        text-align: center; } }
+    .reviews .reviewUnit .reviewUnitRight .reviewFrom {
+      color: #222224;
+      font-size: 12px;
+      font-weight: 300; }
+    .reviews .reviewUnit .reviewUnitRight .reviewsSwitch {
+      width: 140px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px; }
+      @media (max-width: 353px) {
+        .reviews .reviewUnit .reviewUnitRight .reviewsSwitch {
+          margin-left: auto;
+          margin-right: auto; } }
+      .reviews .reviewUnit .reviewUnitRight .reviewsSwitch div {
+        width: 38px;
+        height: 4px;
+        background-color: #d6d6d6; }
+        .reviews .reviewUnit .reviewUnitRight .reviewsSwitch div:hover {
+          background-color: #f16d7f;
+          cursor: pointer; }
+
+.subscribeDivider {
+  width: 1px;
+  background: #e3e3e3; }
+  @media (max-width: 1040px) {
+    .subscribeDivider {
+      display: none; } }
+
+.subscribeRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .subscribeRightHead {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #222224; }
+  .subscribeRightText {
+    margin: 10px 0 35px; }
+    @media (max-width: 353px) {
+      .subscribeRightText {
+        text-align: center; } }
+  .subscribeRight .subscribeForm {
+    height: 46px; }
+    @media (max-width: 353px) {
+      .subscribeRight .subscribeForm {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    .subscribeRight .subscribeForm input {
+      height: inherit;
+      width: 334px;
+      border: none;
+      outline: none;
+      padding: 0 28px;
+      font-weight: 700;
+      background-color: #e1e1e1;
+      border-top-left-radius: 23px;
+      border-bottom-left-radius: 23px;
+      float: left; }
+      @media (max-width: 519px) {
+        .subscribeRight .subscribeForm input {
+          width: auto; } }
+      @media (max-width: 353px) {
+        .subscribeRight .subscribeForm input {
+          float: none;
+          border-top-right-radius: 23px;
+          border-bottom-right-radius: 23px;
+          height: 46px;
+          text-align: center; } }
+    .subscribeRight .subscribeForm button {
+      background-color: #f16d7f;
+      border-top-right-radius: 23px;
+      border-bottom-right-radius: 23px;
+      color: white;
+      border: none;
+      height: inherit;
+      padding: 0 20px;
+      outline: none;
+      cursor: pointer; }
+      @media (max-width: 353px) {
+        .subscribeRight .subscribeForm button {
+          border-top-left-radius: 23px;
+          border-bottom-left-radius: 23px;
+          height: 46px;
+          margin-top: 15px; } }
+
+footer {
+  margin-top: 100px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+  footer .footerBrand {
+    width: 427px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #898989; }
+    @media (max-width: 904px) {
+      footer .footerBrand {
+        width: auto; } }
+    footer .footerBrand .footerBrandText1 {
+      margin: 30px 0; }
+    footer .footerBrand .logo {
+      width: 165px;
+      line-height: 51px;
+      background: url(../images/logo.png) no-repeat;
+      font-size: 27px;
+      font-weight: 300;
+      padding-left: 60px; }
+      @media (max-width: 745px) {
+        footer .footerBrand .logo {
+          width: auto; } }
+      footer .footerBrand .logo span {
+        color: #f16d7f;
+        font-weight: 400; }
+  footer .footerColumn {
+    padding-top: 15px; }
+    footer .footerColumn h2 {
+      margin: 0 0 30px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #f16d7f; }
+      @media (max-width: 904px) {
+        footer .footerColumn h2 {
+          margin: 0; } }
+    footer .footerColumn a {
+      display: block;
+      color: #898989;
+      font-size: 16px;
+      text-decoration: none; }
+      footer .footerColumn a:hover {
+        color: #f16d7f; }
+      footer .footerColumn a:not(:last-child) {
+        margin-bottom: 25px; }
+        @media (max-width: 904px) {
+          footer .footerColumn a:not(:last-child) {
+            margin-bottom: 0; } }
+      @media (max-width: 904px) {
+        footer .footerColumn a {
+          display: inline-block;
+          padding: 10px; } }
+    @media (max-width: 904px) {
+      footer .footerColumn nav {
+        margin: 0 -10px; } }
+
+.copyrights {
+  margin-top: 100px;
+  height: 80px;
+  background: #e6e6e6; }
+  @media (max-width: 500px) {
+    .copyrights {
+      height: auto;
+      padding: 15px; } }
+  .copyrights .copyrightsWrap {
+    color: #7a7a7a;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 500px) {
+      .copyrights .copyrightsWrap {
+        height: auto;
+        flex-direction: column;
+        justify-content: center; } }
+    .copyrights .copyrightsWrap .copyrightsRight {
+      display: flex;
+      width: 200px;
+      justify-content: space-between; }
+      @media (max-width: 500px) {
+        .copyrights .copyrightsWrap .copyrightsRight {
+          margin-top: 30px; } }
+      .copyrights .copyrightsWrap .copyrightsRight a {
+        text-decoration: none;
+        color: inherit; }
+      .copyrights .copyrightsWrap .copyrightsRight i {
+        width: 32px;
+        height: 32px;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .copyrights .copyrightsWrap .copyrightsRight i:hover {
+          color: white;
+          background: #f16d7f; }
+
+/*# sourceMappingURL=styleBottomPart.css.map */

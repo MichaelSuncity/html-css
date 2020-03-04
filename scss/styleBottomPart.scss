@@ -1,0 +1,376 @@
+@import "variables";
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+//Стили для  subscribeWrap footer copyrights
+
+.subscribeWrap {
+    margin-top: 100px;
+    height: 438px;
+    background: url(../images/subscribe.jpg) no-repeat center bottom, #ccc;
+    background-blend-mode: overlay;
+    background-size: cover;
+
+    @media (max-width: 1040px) {
+        height: auto;
+    }
+
+    .subscribe {
+        display: flex;
+        height: inherit;
+    
+        @media (max-width: 1040px) {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .reviews,
+        .subscribeRight {
+            width: calc(50% - 0.5px);
+    
+            @media (max-width: 1040px) {
+                width: auto;
+            }
+        }
+    }
+}
+
+.productsPageSubscribe {
+    margin-top: 0;
+}
+
+
+.reviews {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1040px) {
+        margin-bottom: 50px;
+    }
+
+    .reviewUnit {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        
+        @media (max-width: 530px) {
+            width: auto;
+        }
+
+        @media (max-width: 353px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .reviewUnitLeft {
+            width: 83px;
+        }
+        
+        .reviewUnitRight {
+            width: 386px;
+        }
+
+        .reviewUnitLeft,
+        .reviewUnitRight {
+            @media (max-width: 530px) {
+                width: auto;
+            }
+        }
+
+        .reviewUnitRight {
+            @media (max-width: 530px) {
+                margin-left: 15px;
+            }
+
+            @media (max-width: 353px) {
+                margin-left: 0;
+            }
+
+            blockquote {
+                margin: 0;
+                font-size: 16px;
+                font-style: italic;
+                line-height: 26px;
+                font-weight: 700;
+            }
+
+            .reviewName {
+                margin-top: 20px;
+                font-size: 16px;
+                font-weight: 700;
+                color: $mainColor;
+            }
+
+            .reviewName,
+            .reviewFrom {
+                @media (max-width: 353px) {
+                    text-align: center;
+                }
+            }
+
+            .reviewFrom {
+                color: #222224;
+                font-size: 12px;
+                font-weight: 300;
+            }
+
+            .reviewsSwitch {
+                width: 140px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+            
+                @media (max-width: 353px) {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                div {
+                    width: 38px;
+                    height: 4px;
+                    background-color: #d6d6d6;
+
+                    &:hover {
+                        background-color: $mainColor;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subscribeDivider {
+    width: 1px;
+    background: #e3e3e3;
+
+    @media (max-width: 1040px) {
+        display: none;
+    }
+}
+
+.subscribeRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &Head {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #222224;
+    }
+
+    &Text {
+        margin: 10px 0 35px;
+
+        @media (max-width: 353px) {
+            text-align: center;
+        }
+    }
+
+    .subscribeForm {
+        height: 46px;
+    
+        @media (max-width: 353px) {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            height: inherit;
+            width: 334px;
+            border: none;
+            outline: none;
+            padding: 0 28px;
+            font-weight: 700;
+            background-color: #e1e1e1;
+            border-top-left-radius: 23px;
+            border-bottom-left-radius: 23px;
+            float: left;
+
+            @media (max-width: 519px) {
+                width: auto;
+            }
+
+            @media (max-width: 353px) {
+                float: none;
+                border-top-right-radius: 23px;
+                border-bottom-right-radius: 23px;
+                height: 46px;
+                text-align: center;
+            }
+        }
+
+        button {
+            background-color: $mainColor;
+            border-top-right-radius: 23px;
+            border-bottom-right-radius: 23px;
+            color: white;
+            border: none;
+            height: inherit;
+            padding: 0 20px;
+            outline: none;
+            cursor: pointer;
+        
+            @media (max-width: 353px) {
+                border-top-left-radius: 23px;
+                border-bottom-left-radius: 23px;
+                height: 46px;
+                margin-top: 15px;
+            }
+        }
+        
+    }
+}
+
+footer {
+    margin-top: 100px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .footerBrand {
+        width: 427px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        color: #898989;
+    
+        @media (max-width: 904px) {
+            width: auto;
+        }
+
+        .footerBrandText1 {
+            margin: 30px 0;
+        }
+
+        .logo {
+            width: 165px;
+            line-height: 51px;
+            background: url(../images/logo.png) no-repeat;
+            font-size: 27px;
+            font-weight: 300;
+            padding-left: 60px;
+    
+            @media (max-width: 745px) {
+                width: auto;
+            }
+    
+            span {
+                color: $mainColor;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .footerColumn {
+        padding-top: 15px;
+
+        h2 {
+            margin: 0 0 30px;
+            font-size: 18px;
+            font-weight: 700;
+            color: $mainColor;
+
+            @media (max-width: 904px) {
+                margin: 0;
+            }
+        }
+
+        a {
+            display: block;
+            color: #898989;
+            font-size: 16px;
+            text-decoration: none;
+
+            &:hover {
+                color: $mainColor;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 25px;
+
+                @media (max-width: 904px) {
+                    margin-bottom: 0;
+                }
+            }
+        
+            @media (max-width: 904px) {
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+
+        nav {
+            @media (max-width: 904px) {
+                margin: 0 -10px;
+            }
+        }
+    }
+}
+
+.copyrights {
+    margin-top: 100px;
+    height: 80px;
+    background: #e6e6e6;
+
+    @media (max-width: 500px) {
+        height: auto;
+        padding: 15px;
+    }
+
+    .copyrightsWrap {
+        color: #7a7a7a;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        @media (max-width: 500px) {
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .copyrightsRight {
+            display: flex;
+            width: 200px;
+            justify-content: space-between;
+        
+            @media (max-width: 500px) {
+                margin-top: 30px;
+            }
+        
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        
+            i {
+                width: 32px;
+                height: 32px;
+                background: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+        
+                &:hover {
+                    color: white;
+                    background: $mainColor;
+                }
+            }
+        }
+    }
+}

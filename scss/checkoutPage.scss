@@ -1,0 +1,251 @@
+
+@import "variables";
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+
+    @media (max-width: 1170px) {
+        width: auto;
+        margin: auto;
+    }
+}
+
+.newArrivalsWrap {
+    height: 150px;
+    background: #f8f3f4;
+
+    .newArrivals {
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        
+        h1 {
+            margin: 0;
+            font-weight: 900;
+            color: #f16d7f;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #636363;
+
+            &:hover {
+                color: #f16d7f;
+            }
+            
+            &:last-child {
+                font-weight: 700;
+                color: #f16d7f;
+            }
+        }
+    }
+
+    @media (max-width: 520px) {
+        .newArrivals {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        } 
+    }
+}
+
+
+
+.checkOutWrap {
+    margin: 90px auto;
+}
+
+.checkOutDetails {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8e8e8;
+
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    summary {
+        position: relative;
+        outline: none;
+        left: 1px;
+    }
+
+    .checkOutHeader {
+        color: #222222;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: absolute;
+        left: -1px;
+        top: 0;
+        background: white;
+
+        &:hover {
+            color: #f16d7f;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+
+
+
+.checkOutData {
+    margin-top: 40px;
+
+    .shippingDetailsWrap {
+        padding: 0 35px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 670px) {
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+.shippingDetailsLeft,
+.shippingDetailsRight {
+    width: calc(50% - 15px);
+
+    .shippingDetailsHead {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    .shippingDetailsDesc {
+        color: #b3b2b2;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 670px) {
+    .shippingDetailsLeft,
+    .shippingDetailsRight {
+        width: auto;
+    }
+    .shippingDetailsRight {
+        margin-top: 30px;
+    }
+}
+
+
+
+#reg1,
+#reg2 {
+    display: none;
+}
+
+label[for="reg1"],
+label[for="reg2"] {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background: url(../images/regEmpty.png) no-repeat left center;
+}
+
+#reg1:checked + label,
+#reg2:checked + label {
+    background: url(../images/regChecked.png) no-repeat left center;
+}
+
+.shippingRegisterHead {
+    color: #222222;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.shippingRegisterPoint {
+    background: url(../images/arrows.png) no-repeat left center;
+    padding-left: 12px;
+    color: #b3b2b2;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.shippingDetailsLeft button {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    background: none;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.shippingLoginForm label,
+.shippingLoginForm input {
+    display: block;
+}
+
+.shippingLoginForm label {
+    color: #222222;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+
+    span {
+        color: #ff0d0d;
+        font-size: 17px;
+    }
+}
+
+
+.shippingLoginForm input {
+    border: 1px solid #eaeaea;
+    padding: 14px;
+    outline: none;
+    margin-bottom: 20px;
+    width: 65%;   
+
+    @media (max-width: 670px) {
+            width: auto;
+    }
+}
+
+.shippingRequiredLabel {
+    color: #ff0d0d;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.shippingLoginForm button {
+    border: 1px solid #eaeaea;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: none;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+
+.shippingFormForgot {
+    margin-left: 30px;
+    color: #222222;
+    font-size: 14px;
+    line-height: 20px;
+}

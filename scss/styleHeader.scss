@@ -1,0 +1,193 @@
+@import "variables";
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+
+    @media (max-width: 1170px) {
+        width: auto;
+        margin: auto;
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+.visible {
+    opacity: 1;
+}
+  
+
+//Стили для  header и nav
+
+.header {
+    height: 100px;
+    border-bottom: 1px solid #ececec;
+
+    @media (max-width: 745px) {
+        height: auto;
+    }
+
+    .headerInside {
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @media (max-width: 745px) {
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        > div,
+        form {
+            @media (max-width: 745px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        
+    .logo {
+        width: 95px;
+        line-height: 51px;
+        background: url(../images/logo.png) no-repeat;
+        font-size: 27px;
+        font-weight: 300;
+        padding-left: 73px;
+        margin-right: 37px;
+
+        @media (max-width: 745px) {
+            width: auto;
+        }
+
+        span {
+            color: $mainColor;
+            font-weight: 400;
+        }
+    }
+
+        .searchWrap {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            border: 1px solid #e6e6e6;
+            border-radius: 3px;
+            overflow: hidden;
+            width: 400px;
+
+            @media (max-width: 745px) {
+                width: auto;
+            }
+        
+            .searchBrowse {
+                height: inherit;
+                padding: 12px;
+                font-size: 14px;
+                color: #222222;
+                background-color: #f9f9f9;
+                box-sizing: border-box;
+                border-right: 1px solid #e6e6e6;
+
+            
+                @media (max-width: 745px) {
+                    padding: 11px;
+                }
+
+                i {
+                    color: #838383;
+                }
+            }
+        
+            input {
+                height: inherit;
+                padding: 0 3px;
+                border: none;
+                outline: none;
+                flex-grow: 1;
+                padding: 0 15px;
+                color: #a4a4a4;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        
+            button {
+                height: inherit;
+                padding: 0 8px;
+                width: 36px;
+                border: 0;
+                background: none;
+                border-left: 1px solid #e6e6e6;
+            }
+
+            button i {
+                color: #a4a4a4;
+                font-size: 14px;
+            }
+        }
+
+        .headerCart {
+            margin-left: auto;
+            margin-right: 25px;
+        
+            @media (max-width: 745px) {
+                display: none;
+            }
+        }
+
+        .accountBtn {
+            padding: 15px;
+            background-color: $mainColor;
+            color: white;
+            border: none;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.topNav {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 740px) {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    @media (max-width: 425px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #222222;
+
+        &:hover {
+            color: $mainColor;
+            text-decoration: none;
+        }
+    }
+
+    a:not(:last-child) {
+        margin-right: 45px;
+
+        @media (max-width: 425px) {
+            margin-right: 0;
+        }
+    }
+}
